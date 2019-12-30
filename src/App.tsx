@@ -1,12 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+import * as React from 'react';
+// import Hogecontainer from '../src/containers/hogeContainer'
+import Aframecontainer from '../src/containers/aframeReactContainer'
+// import logo from './logo.svg';
 import './App.css';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Aframecontainer />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Hogecontainer />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -18,9 +23,10 @@ const App: React.FC = () => {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
-  );
+    )
+  }
 }
 
 export default App;
